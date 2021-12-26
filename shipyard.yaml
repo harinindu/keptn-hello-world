@@ -17,6 +17,8 @@ spec:
             - name: "evaluation"
             - name: "release"
         - name: "delivery-direct"
+          triggeredOn:
+            - event: "hardening.delivery.finished"
           tasks:
             - name: "deployment"
               properties:
